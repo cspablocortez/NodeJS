@@ -1,6 +1,13 @@
-// Perform a GET Request
+/*
+Perform a GET Request with Node.js
 
-// Using Axios library
+The GET method makes a request to get a representation of a specified resource 
+through a universal resource locator (URL). This is when you click on a link, 
+type a URL, or access embedded content. 
+Sometimes, requests are made without the user's knowledge.
+*/
+
+// Using Axios library 
 const axios = require('axios');
 
 axios
@@ -14,7 +21,7 @@ axios
     });
 
 
-// Note that the above can also be rewritten as:
+// Note that the above can also be rewritten as: ---- 
 axios
     .get('https://example.com/todos')
     .then(function (response) {
