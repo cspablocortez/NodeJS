@@ -56,3 +56,26 @@ request.on('error', error => {
 });
 
 request.end();
+
+/*
+Perform a POST Request with Node.js
+
+The POST method is used to send data to a resource, 
+changing the state of the server.
+*/
+
+// USING AXIOS LIBRARY
+
+axios
+    .post('https://whatever.com/todos', {
+        todo: 'Watch the Superbowl next week'
+    })
+    .then(response => {
+        console.log(`statusCode: ${response.statusCode}`);
+        console.log(response);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+
+
